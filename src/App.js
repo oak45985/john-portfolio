@@ -31,7 +31,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h1>
-          This will be John's portfolio
+          This will be John's portfolio Yes!
         </h1>
         <Nav
           folios={folios}
