@@ -13,12 +13,17 @@ function Contact() {
         }
     };
 
-    //update for 10/9
-    // const handleChange = (e) => {
-    //     if (!e.target.value.length) {
-    //         const
-    //     }
-    // }
+    const handleChange = (e) => {
+        if (!e.target.value.length) {
+            setErrorMessage(`${e.target.name} is required.`)
+        } else {
+            setErrorMessage('');
+        }
+        if(!errorMessage) {
+            setFormState({ ...formState, [e.target.name]: e.target.value });
+            console.log('Handle form', formState);
+        }
+    }
 
     return(
         <section>
