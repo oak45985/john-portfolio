@@ -13,11 +13,12 @@ function Contact() {
         }
     };
 
-    const handleChange = (e) => {
-        if (!e.target.value.length) {
-            const
-        }
-    }
+    //update for 10/9
+    // const handleChange = (e) => {
+    //     if (!e.target.value.length) {
+    //         const
+    //     }
+    // }
 
     return(
         <section>
