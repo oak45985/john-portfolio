@@ -1,39 +1,28 @@
 import React from 'react';
+import { Link, useMatch, useResolvedPath } from 'react-router-dom';
 
-function Nav(props) {
+function CustomLink({ to, children, ...props }) {
+    const resolvedPath = useResolvedPath(to)
+    const isActive = useMatch({ path: resolvedPath.pathname })
 
-    const {
-        folios = [],
-        currentFolio, 
-        setCurrentFolio,
-        contactFormSelected,
-        setContactFormSelected
-    } = props;
+    return (
+        <li className={isActive ? "active" : ""}>
+            <Link to={to} {...props}>
+                {children}
+            </Link>
+        </li>
+    )
+}
+
+function Nav() {
 
     return(
         <nav>
             <ul>
-                <li>
-                    <a data-testid="About" href="#about" onClick={() => setContactFormSelected(false)}>
-                        About
-                    </a>
-                </li>
-                <li className={`${contactFormSelected && 'navActive'}`}>
-                    <span onClick={() => setContactFormSelected(true)}>Contact</span>
-                </li>
-                {folios.map((folio) => (
-                    <li
-                        className={`${
-                            currentFolio.name === folio.name && !contactFormSelected && `navActive`
-                        }`}
-                        key={folio.name}>
-                        <span onClick={() => {
-                            setCurrentFolio(folio);
-                            setContactFormSelected(false);
-                        }}
-                        >{(folio.name)}</span>
-                    </li>
-                ))}
+                <CustomLink to='/'>About</CustomLink>
+                <CustomLink to="/portfolio">Portfolio</CustomLink>
+                <CustomLink to="/resume">Résumé</CustomLink>
+                <CustomLink to="/contact">Contact</CustomLink>
             </ul>
         </nav>
     );

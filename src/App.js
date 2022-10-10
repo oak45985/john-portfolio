@@ -1,31 +1,32 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './App.css';
-import Nav from './components/Nav';
-import About from './components/About';
-import Portfolio from './components/Portfolio';
-import Resume from './components/Resume';
-import Contact from './components/Contact';
+import Nav from './components/Nav/index';
+import About from './components/About/index';
+import Portfolio from './components/Portfolio/index';
+import Resume from './components/Resume/index';
+import Contact from './components/Contact/index';
+import { Route, Routes } from 'react-router-dom';
 
 function App() {
 
-  const [folios] = useState([
-    {
-      name: 'Web',
-      description: 'Applications & sites made by yours truly (except where noted).',
-    },
-    {
-      name: 'Print & 2D',
-      description: 'Posters, logos, & other visual designs made by yours truly.'
-    },
-    {
-      name: 'Video',
-      description: 'Video work (shot & edited) by yours truly.'
-    }
-  ]);
+  // const [folios] = useState([
+  //   {
+  //     name: 'Web',
+  //     description: 'Applications & sites made by yours truly (except where noted).',
+  //   },
+  //   {
+  //     name: 'Print & 2D',
+  //     description: 'Posters, logos, & other visual designs made by yours truly.'
+  //   },
+  //   {
+  //     name: 'Video',
+  //     description: 'Video work (shot & edited) by yours truly.'
+  //   }
+  // ]);
 
-  const [currentFolio, setCurrentFolio] = useState(folios[0]);
+  // const [currentFolio, setCurrentFolio] = useState(folios[0]);
 
-  const [contactFormSelected, setContactFormSelected] = useState(false);
+  // const [contactFormSelected, setContactFormSelected] = useState(false);
 
   return (
     <div className="App">
@@ -33,25 +34,16 @@ function App() {
         <h1>
           This will be John's portfolio Yes!
         </h1>
-        <Nav
-          folios={folios}
-          setCurrentFolio={setCurrentFolio}
-          currentFolio={currentFolio}
-          contactFormSelected={contactFormSelected}
-          setContactFormSelected={setContactFormSelected}
-        ></Nav>
+        <Nav />
       </header>
-      <main>
-        {!contactFormSelected ? (
-          <>
-            <About currentFolio={currentFolio}></About>
-            <Portfolio></Portfolio>
-            <Resume></Resume>
-          </>
-        ) : (
-          <Contact></Contact>
-        )}
-      </main>
+      <main className='elements'>
+            <Routes>
+              <Route path="/" element={<About />} />
+              <Route path="/portfolio" element={<Portfolio />} />
+              <Route path="/resume" element={<Resume />} />
+              <Route path="/contact" element={<Contact />} />
+            </Routes>
+          </main>
       <footer>
         <p>This text will be footer items.</p>
       </footer>
