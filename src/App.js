@@ -9,25 +9,6 @@ import { Route, Routes } from 'react-router-dom';
 
 function App() {
 
-  // const [folios] = useState([
-  //   {
-  //     name: 'Web',
-  //     description: 'Applications & sites made by yours truly (except where noted).',
-  //   },
-  //   {
-  //     name: 'Print & 2D',
-  //     description: 'Posters, logos, & other visual designs made by yours truly.'
-  //   },
-  //   {
-  //     name: 'Video',
-  //     description: 'Video work (shot & edited) by yours truly.'
-  //   }
-  // ]);
-
-  // const [currentFolio, setCurrentFolio] = useState(folios[0]);
-
-  // const [contactFormSelected, setContactFormSelected] = useState(false);
-
   return (
     <div className="App">
       <header className="App-header">

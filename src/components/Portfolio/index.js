@@ -1,12 +1,39 @@
-import React from 'react';
+import React, { useState } from 'react';
+import FolioList from '../../components/FolioList/index.js'
+import SubNav from '../Nav/Subnav';
 
 const Portfolio = () => {
+
+    const [folios] = useState([
+    {
+      name: 'Web',
+      description: 'Applications & sites made by yours truly (except where noted).',
+    },
+    {
+      name: 'Print & 2D',
+      description: 'Posters, logos, & other visual designs made by yours truly.'
+    },
+    {
+      name: 'Video',
+      description: 'Video work (shot & edited) by yours truly.'
+    }
+  ]);
+
+  const [currentFolio, setCurrentFolio] = useState(folios[0]);
+
     return(
         <section>
-            <h1>This is portfolio information.</h1>
             <div>
-                <p>This text will provide info about portfolio.</p>
+                <SubNav
+                    folios={folios}
+                    setCurrentFolio={setCurrentFolio}
+                    currentFolio={currentFolio}
+                >
+            </SubNav>
             </div>
+            <article>
+                <FolioList currentFolio={currentFolio}></FolioList>
+            </article>
         </section>
     );
 }
