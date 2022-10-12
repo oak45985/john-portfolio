@@ -1,8 +1,8 @@
 import React from 'react';
 import Folios from '../Folios/index.js';
 
-function FolioList(props) {
-    const { currentFolio } = props;
+function FolioList(folios) {
+    const { currentFolio } = folios;
     return(
         <section>
             <h1 data-testid="foliotitle">{(currentFolio.name)}</h1>
