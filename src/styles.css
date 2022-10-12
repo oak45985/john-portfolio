@@ -1,0 +1,158 @@
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding: 1vw;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+
+header h1 {
+    font-weight: bold;
+    font-size: 2vw;
+    color: black;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style: none;
+    justify-content: center;
+    padding: 1.5vw 3vw;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+    margin: 10px, 10px, 10px, 10px;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+    list-style: none;
+}
+
+header nav ul li {
+    padding: 3vw 3vw;
+    font-weight: bold;
+    font-size: 1.55vw;
+}
+
+header nav ul li:hover {
+    opacity: .75;
+    text-shadow: rgb(113, 113, 113);
+}
+
+header nav ul li p:hover {
+    display: block;
+}
+
+header nav ul li.nav {
+    color: #fff;
+}
+
+header nav ul li.nav:hover {
+    color: black;
+    opacity: .75;
+    font-style: italic;
+}
+
+/* HEADER END */
+
+main {
+    display: flexbox;
+    flex-wrap: wrap;
+    justify-self: center;
+    justify-content: center;
+    margin: auto;
+}
+
+section h1 {
+    font-weight: bold;
+    font-size: 2vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-self: center;
+    justify-content: space-around;
+}
+
+section h2 {
+    margin: auto;
+    text-align: center;
+    padding-bottom: .50%;
+    font-style: italic;
+    font-size: 3vw;
+}
+
+section h3 {
+    font-style: bold;
+    
+}
+
+section div {
+    font-size: 1.5vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-self: center;
+    justify-content: space-around;
+}
+
+footer div {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: #fff;
+    padding: 1%;
+    padding-bottom: 2%;
+    margin: 0 auto;
+    width: 100%;
+    justify-content: center;
+}
+
+footer img {
+    max-width: 5%;
+    margin: none;
+}
+
+footer p {
+    text-align: right;
+    font-size: 2vw;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.elements {
+    display: block;
+    flex-wrap: wrap;
+    justify-self: center;
+    justify-content: center;
+    margin: auto;
+}
+.side {
+    font-style: italic;
+    margin: auto;
+}
+.hero {
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed, -120px;
+    background-position: 100%;
+}
+
+.goodideas {
+    position: relative;
+    max-width: 40%;
+    z-index: 9999;
+    top: -70px;
+    left: -10px;
+}

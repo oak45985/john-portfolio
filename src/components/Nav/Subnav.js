@@ -9,8 +9,8 @@ function SubNav(props) {
     } = props;
 
     return(
-    <div>
-        <ul>
+    <div className="subnav">
+        <ul className="subnavul">
             {folios.map((folio) => (
                     <li className ={`${
                             currentFolio.name === folio.name && 'navActive'

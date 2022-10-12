@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import './styles.css';
 import Nav from './components/Nav/index';
 import About from './components/About/index';
 import Portfolio from './components/Portfolio/index';
@@ -13,7 +13,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h1>
-          This will be John's portfolio Yes!
+          John Oakley
         </h1>
         <Nav />
       </header>
