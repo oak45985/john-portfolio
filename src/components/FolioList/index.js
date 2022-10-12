@@ -7,7 +7,7 @@ function FolioList(props) {
         <section>
             <h1 data-testid="foliotitle">{(currentFolio.name)}</h1>
             <p>{currentFolio.description}</p>
-            <Folios category={currentFolio.name} />
+            <Folios genre={currentFolio.name} />
         </section>
     )
 }
