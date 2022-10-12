@@ -13,7 +13,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h1>
-          John Oakley
+          John Logan
         </h1>
         <Nav />
       </header>
