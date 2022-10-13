@@ -4,7 +4,7 @@ import Folios from '../Folios/index.js';
 function FolioList(folios) {
     const { currentFolio } = folios;
     return(
-        <section>
+        <section className='portfolioart'>
             <h1 data-testid="foliotitle">{(currentFolio.name)}</h1>
             <p>{currentFolio.description}</p>
             <Folios genre={currentFolio.name} />
