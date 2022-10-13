@@ -127,6 +127,11 @@ button {
     display: block;
 }
 
+iframe {
+    height: 100%;
+    width: 100%;
+}
+
 .subnavul {
     font-size: 1.5vw;
     display: flex;

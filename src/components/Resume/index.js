@@ -1,12 +1,13 @@
 import React from 'react';
+// import ReactDOM from 'react-dom';
+import resume from '../../assets/resume/John Oakley Resume UPDATED amended.pdf'
+import ReactPDF from '@react-pdf/renderer';
 
 const Resume = () => {
     return(
         <section>
-            <h1>This is resume information.</h1>
-            <div>
-                <p>This text will provide info about resume.</p>
-            </div>
+            <h1>Résumé</h1>
+            <p>resume info</p>
         </section>
     );
 }
