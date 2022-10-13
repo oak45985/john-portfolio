@@ -1,8 +1,10 @@
 import React from 'react';
+import image from '../../assets/about/aboutimage.gif'
 
 const About = () => {
     return(
         <section>
+            <img src={image} alt='John Oakley' />
             <h1>John Logan is a web developer & designer.</h1>
             <div>
                 <p>Born & raised in East Texas, he headed out as fast as he could only to 
