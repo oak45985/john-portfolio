@@ -20,6 +20,8 @@ const Resume = () => {
         <section>
             <h1>Résumé</h1>
             <iframe src={resume} title="resume" />
+            <br></br>
+            <br></br>
             <button onClick={onButtonClick}>
                 Download Résumé
             </button>

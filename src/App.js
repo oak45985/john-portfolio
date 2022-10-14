@@ -13,7 +13,9 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h1>
+          <a href='/'>
           John Logan
+          </a>
         </h1>
         <Nav />
       </header>
@@ -26,7 +28,11 @@ function App() {
             </Routes>
           </main>
       <footer>
-        <p>This text will be footer items.</p>
+        <p>
+        <a href='https://github.com/oak45985'>GitHub</a>
+        <a href='https://www.linkedin.com/in/john-oakley-4a279976/'>LinkedIn</a>
+        <a href='https://www.instagram.com/n_vwls/'>Insta</a>
+        </p>
       </footer>
     </div>
   );

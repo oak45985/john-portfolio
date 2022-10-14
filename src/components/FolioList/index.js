@@ -7,6 +7,7 @@ function FolioList(folios) {
         <section className='portfolioart'>
             <h1 data-testid="foliotitle">{(currentFolio.name)}</h1>
             <p>{currentFolio.description}</p>
+            <br></br>
             <Folios genre={currentFolio.name} />
         </section>
     )

@@ -7,15 +7,15 @@ const Portfolio = () => {
     const [folios] = useState([
     {
       name: 'Web',
-      description: 'Applications & sites made by yours truly (except where noted).',
+      description: 'Applications & sites made by yours truly.',
     },
     {
       name: 'Print & 2D',
-      description: 'Posters, logos, & other visual designs made by yours truly.'
+      description: 'Posters, logos, & other visual designs made by yours truly. Coming Soon!'
     },
     {
       name: 'Video',
-      description: 'Video work (shot & edited) by yours truly.'
+      description: 'Video work (shot & edited) by yours truly. Coming Soon!'
     }
   ]);
 
