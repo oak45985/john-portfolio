@@ -9,44 +9,44 @@ const Folios = ({ genre }) => {
         {
             name: 'National Parks Project',
             genre: 'Web',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
+            description: '1',
             github: 'https://github.com/oak45985/projectone',
             site: 'https://oak45985.github.io/projectone/'
           },
           {
             name: 'SounDiscover',
             genre: 'Web',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
+            description: '2',
             github: 'https://github.com/oak45985/project_two',
             site: 'https://safe-escarpment-30150.herokuapp.com/'
           },
           {
             name: 'Run Buddy',
             genre: 'Web',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
+            description: '3',
             github: 'https://github.com/oak45985/run-buddy',
             site: 'https://lernantino.github.io/run-buddy/'
           },
           {
             name: 'HTML Portfolio',
             genre: 'Web',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
+            description: '4',
             github: 'https://github.com/oak45985/goodideas',
             site: 'https://oak45985.github.io/goodideas/'
           },
           {
             name: 'Photo Portfolio',
             genre: 'Web',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
+            description: '5',
             github: 'https://github.com/oak45985/photo-port',
             site: '/'
           },
           {
-            name: 'Run Buddy 3',
+            name: 'Notetaker App',
             genre: 'Web',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
-            github: 'https://github.com/oak45985/run-buddy',
-            site: 'https://lernantino.github.io/run-buddy/'
+            description: '6',
+            github: 'https://github.com/oak45985/notetaker',
+            site: 'https://stark-chamber-30879.herokuapp.com/'
           }
     ]);
 
@@ -55,15 +55,17 @@ const Folios = ({ genre }) => {
     return (
         <div>
             {currentItems.map((item) => (
-                <p key={item.name}>{item.name}:<br></br>
-                   <a
+                <p key={item.name} className="piece">{item.name}<br></br>
+                <img src={require(`../../assets/folioimages/${item.name}.jpg`).default} alt={item.name} />
+                   <a className="side"
                     href={item.github}
                   >GitHub
-                  </a><br></br>
-                  <a
+                  </a>
+                  <a className="side"
                     href={item.site}
                   >Site
                   </a><br></br>
+                  <br></br>
                 </p>
             ))}
         </div>
