@@ -21,11 +21,11 @@ const Folios = ({ genre }) => {
             site: 'https://safe-escarpment-30150.herokuapp.com/'
           },
           {
-            name: 'Run Buddy',
+            name: 'Work Comm',
             genre: 'Web',
             description: '3',
-            github: 'https://github.com/oak45985/run-buddy',
-            site: 'https://lernantino.github.io/run-buddy/'
+            github: 'https://github.com/oak45985/workcomm',
+            site: 'https://sheltered-sea-51848.herokuapp.com/'
           },
           {
             name: 'HTML Portfolio',
